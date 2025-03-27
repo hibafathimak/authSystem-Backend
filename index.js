@@ -7,7 +7,7 @@ require('express-validator')
 const serverApp = express()
 const router = require("./routes/authRoutes")
 
-serverApp.use(cors)
+serverApp.use(cors())
 serverApp.use(express.json())
 serverApp.use(router)
 
